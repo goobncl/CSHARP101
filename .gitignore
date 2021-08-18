@@ -1,0 +1,4 @@
+*.DS_Store
+MultiThreadApp/bin/
+MultiThreadApp/obj/
+.vscode
