@@ -1,4 +1,4 @@
 *.DS_Store
-MultiThreadApp/bin/
-MultiThreadApp/obj/
+bin
+obj
 .vscode
