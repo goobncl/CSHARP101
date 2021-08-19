@@ -21,4 +21,16 @@ public record Person
 }*/
 
 // Positional record
-public record Person(string Name, int Age);
+//public record Person(string Name, int Age);
+
+// Derived record
+public record Person
+{
+    public string Name { get; init; }
+    public int Age { get; init; }
+}
+
+public record Employee :  Person
+{
+    public int Id { get; init; }
+}

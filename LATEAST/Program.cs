@@ -6,12 +6,14 @@ namespace LATEAST
     {
         static void Main(string[] args)
         {
-            // Using constructor
-            Person tom = new Person("Tom", 30);
-            // Using deconstructor
-            var (name, age) = tom;
-            
-            Console.WriteLine($"{name}, {age}");
+            Person p1 = new Employee
+            {
+                Id = 1001,
+                Name = "Tom",
+                Age = 30
+            };
+
+            Console.WriteLine(p1.ToString());
         }
     }
 }
