@@ -6,7 +6,8 @@ namespace BASIC
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CSVar obj = new CSVar();
+            obj.Method1();
         }
     }
 }
