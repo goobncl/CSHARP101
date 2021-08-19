@@ -6,17 +6,12 @@ namespace LATEAST
     {
         static void Main(string[] args)
         {
-            Person tom1 = new Person
-            {
-                Name = "Tom",
-                Age = 30
-            };
-            Person tom2 = tom1 with { Age = 30 };
+            // Using constructor
+            Person tom = new Person("Tom", 30);
+            // Using deconstructor
+            var (name, age) = tom;
             
-            bool same = tom1.Equals(tom2);
-            bool b = ReferenceEquals(tom1, tom2);
-            Console.WriteLine(same);
-            Console.WriteLine(b);
+            Console.WriteLine($"{name}, {age}");
         }
     }
 }
