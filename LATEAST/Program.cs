@@ -11,13 +11,12 @@ namespace LATEAST
                 Name = "Tom",
                 Age = 30
             };
-            Person tom2 = tom1 with { Age = 40 };
+            Person tom2 = tom1 with { Age = 30 };
             
-            string s1 = tom1.Age.ToString();
-            string s2 = tom2.Age.ToString();
-            
-            Console.WriteLine(s1);
-            Console.WriteLine(s2);
+            bool same = tom1.Equals(tom2);
+            bool b = ReferenceEquals(tom1, tom2);
+            Console.WriteLine(same);
+            Console.WriteLine(b);
         }
     }
 }
